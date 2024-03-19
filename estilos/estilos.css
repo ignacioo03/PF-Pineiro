@@ -134,7 +134,8 @@ h1,
 }
 .contenedorImagen img.correctorAltura {
   height: 200px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 416px;
 }
 
@@ -196,7 +197,6 @@ footer {
 }
 footer p {
   margin-bottom: 20px;
-  font-style: italic;
 }
 footer .redes a {
   text-decoration: none;
@@ -210,6 +210,4 @@ footer .redes i:hover {
   color: #F57C00;
 }
 
-/*fin css del footer*/
-
-/*# sourceMappingURL=estilos.css.map */
+/*fin css del footer*//*# sourceMappingURL=estilos.css.map */
