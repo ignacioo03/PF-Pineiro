@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Albert Sans", sans-serif;
+}
+
+$color1: #F57C00;
+$color2: #FBAB7E;
+$color3: #F7CE68;
+
+
+.navbar {
+    background-color: $color1;
+
+}
+
+.navbar-brand {
+    color: white !important;
+    text-shadow: 0 0 5px black;
+
+    img {
+        height: 55px;
+        width: 60px;
+    }
+}
+
+.nav-link {
+    color: white;
+
+    &:hover {
+        color: yellow !important;
+    }
+}
+
+h2 {
+    text-align: center;
+    background-color: #FFC107;
+    padding: 20px;
+    font-weight: bold;
+    margin: 0;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-delay: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    font-style: italic;
+
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.pright {
+    background-image: url(../imagenes/imagenNosotros.jpg);
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+
+.pleft {
+    background-color: $color2;
+    background-image: linear-gradient(62deg, $color2 0%, $color3 100%);
+}
+
+.nLeft2 {
+    background-image: url(../imagenes/fideosNosotros.jpg);
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+
+.nRight2 {
+    background-color: $color2;
+    background-image: linear-gradient(298deg, $color2 0%, $color3 100%);
+}
+
+.nRight3 {
+    background-image: url(../imagenes/nosotrospastas.jpg);
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.nLeft3 {
+    background-color: $color2;
+    background-image: linear-gradient(62deg, $color2 0%, $color3 100%);
+}
+
+.sobreNosotros {
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.jumbotron {
+    background-color: #F57C00 !important;
+    height: 200px;
+    font-weight: bold;
+    border-bottom: 0;
+}
+
+h1,
+.fa-solid,
+.pJumbotron {
+    text-shadow: 0 0 5px black;
+}
+
+.nleft {
+    background-color: $color2;
+    background-image: linear-gradient(62deg, $color2 0%, $color3 100%);
+
+    h3 {
+        margin-top: 10px;
+        background-color: #FFEB3B;
+        font-style: italic;
+
+    }
+}
+
+.btn:hover {
+    transform: translate(30px);
+    transition: 1s;
+}
+
+.d-block {
+    width: 100%;
+    max-height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.contenedorImagen {
+    border: 2px solid black;
+    padding: 15px;
+    max-width: 100%;
+    height: auto;
+
+    img.correctorAltura {
+        height: 200px;
+        object-fit: cover;
+        width: 416px;
+    }
+}
+
+.accordion-button {
+    color: $color1 !important;
+}
+
+.accordion-button::after {
+    color: $color1 !important;
+    ;
+}
+
+.col-md-4 {
+    margin-bottom: 20px;
+}
+
+.contenedorVideo {
+    border: 2px solid black;
+    padding: 15px;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+body {
+    background-color: $color2;
+    background-image: linear-gradient(62deg, $color2 0%, #F7CE68 100%);
+}
+
+
+h3 {
+    background-color: #FFEB3B;
+    font-style: italic;
+}
+
+.containerContacto {
+    background-color: $color2;
+    background-image: linear-gradient(62deg, $color2 0%, #F7CE68 100%);
+
+    input,
+    textarea {
+        width: 100%;
+        max-width: 1200px;
+
+    }
+}
+
+.containerUbicacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 0;
+    ;
+}
+
+/*inicio css del footer*/
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+
+    p {
+        margin-bottom: 20px;
+        font-style: italic;
+    }
+
+    .redes {
+        a {
+            text-decoration: none;
+        }
+
+        i {
+            color: #FFC107;
+            font-size: 40px;
+            letter-spacing: 10px;
+
+            &:hover {
+                color: $color1;
+                ;
+            }
+        }
+    }
+}
+
+/*fin css del footer*/
