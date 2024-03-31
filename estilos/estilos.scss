@@ -502,6 +502,20 @@ footer {
     text-shadow: 0 0 5px black;
     font-size: 22px;
 }
+
+body {
+	width: 100%;
+}
+footer {
+	width: 100%;
+}
+.food-menu-item {
+	flex-direction: column;
+	align-items: center;
+	.food-description {
+		text-align: center;
+	}
+}
 }
 
 
