@@ -432,5 +432,11 @@ footer .redes i:hover {
     font-size: 18px;
     padding: 10px;
   }
+  h1,
+  .fa-solid,
+  .pJumbotron {
+    text-shadow: 0 0 5px black;
+    font-size: 22px;
+  }
 }
 /*fin scss del footer*//*# sourceMappingURL=estilos.css.map */
