@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
@@ -7,7 +8,7 @@
 }
 
 .navbar {
-  background-color: #F57C00;
+  background-color: #594B02;
 }
 
 .navbar-brand {
@@ -28,9 +29,10 @@
 
 h2 {
   text-align: center;
-  background-color: #FFC107;
+  background-color: #F2CB05;
   padding: 20px;
   font-weight: bold;
+  font-size: 45px;
   margin: 0;
   animation-duration: 2s;
   animation-name: aparecer;
@@ -50,38 +52,58 @@ h2 {
 }
 .pright {
   background-image: url(../imagenes/imagenNosotros.jpg);
-  height: 250px;
+  height: 500px;
   background-size: cover;
   background-position: center;
 }
 
 .pleft {
-  background-color: #FBAB7E;
-  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+  background-color: #F6CE77;
+  background-image: linear-gradient(62deg, #F6CE77 0%, #F2DFBB 100%);
+  height: 350px;
+}
+
+.pleft-index {
+  height: 500px;
+}
+
+.nLeft {
+  background-color: #F6CE77;
+  background-image: linear-gradient(62deg, #F6CE77 0%, #F2DFBB 100%);
+  height: 350px;
+}
+
+.nRight {
+  background-image: url(../imagenes/imagenNosotros.jpg);
+  height: 350px;
+  background-size: cover;
+  background-position: center;
 }
 
 .nLeft2 {
   background-image: url(../imagenes/fideosNosotros.jpg);
-  height: 250px;
+  height: 350px;
   background-size: cover;
   background-position: center;
 }
 
 .nRight2 {
-  background-color: #FBAB7E;
-  background-image: linear-gradient(298deg, #FBAB7E 0%, #F7CE68 100%);
+  background-color: #F6CE77;
+  background-image: linear-gradient(298deg, #F6CE77 0%, #F2DFBB 100%);
+  height: 350px;
 }
 
 .nRight3 {
   background-image: url(../imagenes/nosotrospastas.jpg);
-  height: 250px;
+  height: 350px;
   background-size: cover;
   background-position: center;
 }
 
 .nLeft3 {
-  background-color: #FBAB7E;
-  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+  background-color: #F6CE77;
+  background-image: linear-gradient(62deg, #F6CE77 0%, #F2DFBB 100%);
+  height: 350px;
 }
 
 .sobreNosotros {
@@ -92,10 +114,16 @@ h2 {
 }
 
 .jumbotron {
-  background-color: #F57C00 !important;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.1);
+  text-align: center;
   height: 200px;
   font-weight: bold;
   border-bottom: 0;
+  background-image: url(../imagenes/fotojumbotron.jpg);
+  background-size: cover;
+  background-position-y: center;
+  background-attachment: fixed;
 }
 
 h1,
@@ -105,8 +133,8 @@ h1,
 }
 
 .nleft {
-  background-color: #FBAB7E;
-  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+  background-color: #F6CE77;
+  background-image: linear-gradient(62deg, #F6CE77 0%, #F2DFBB 100%);
 }
 .nleft h3 {
   margin-top: 10px;
@@ -124,6 +152,7 @@ h1,
   max-height: 500px;
   position: relative;
   overflow: hidden;
+  border: 2px solid black;
 }
 
 .contenedorImagen {
@@ -140,11 +169,12 @@ h1,
 }
 
 .accordion-button {
-  color: #F57C00 !important;
+  color: #594B02 !important;
+  font-size: 40px;
 }
 
 .accordion-button::after {
-  color: #F57C00 !important;
+  color: #594B02 !important;
 }
 
 .col-md-4 {
@@ -160,23 +190,49 @@ h1,
 }
 
 body {
-  background-color: #FBAB7E;
-  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+  background-color: #F6CE77;
+  background-image: linear-gradient(62deg, #F6CE77 0%, #F7CE68 100%);
 }
 
 h3 {
   background-color: #FFEB3B;
   font-style: italic;
+  font-size: 45px;
+}
+
+p {
+  font-size: 25px;
 }
 
 .containerContacto {
-  background-color: #FBAB7E;
-  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+  width: 100%;
+  color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 100%;
+  font-weight: bold;
+  border-bottom: 0;
+  background-image: url(../imagenes/fotojumbotronbyn.jpg);
+  background-size: cover;
+  background-position-y: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
-.containerContacto input,
+.containerContacto input {
+  width: 100%;
+  width: 700px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  padding: 10px;
+}
 .containerContacto textarea {
   width: 100%;
-  max-width: 1200px;
+  width: 700px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  padding: 10px;
 }
 
 .containerUbicacion {
@@ -184,6 +240,88 @@ h3 {
   justify-content: center;
   align-items: center;
   margin-top: 0;
+}
+
+.food-menu-heading {
+  text-align: center;
+  font-size: 3.4rem;
+  font-weight: 400;
+  color: #666;
+}
+
+.food-menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0px 30px 0px;
+}
+.food-menu-container img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.food-menu-item {
+  display: flex;
+  flex: 1 1 600px;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+}
+
+.food-description {
+  margin: auto 1.5rem;
+}
+
+.font-title {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #444;
+}
+
+.recetas-menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0px 30px 0px;
+}
+
+.recetas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distribuye uniformemente los elementos */
+  margin-bottom: 40px; /* Espacio al final de la página */
+  margin-top: 40px;
+  /* Ajusta el espaciado horizontal */
+}
+
+.recetas-menu-item {
+  width: calc(33.33% - 20px);
+  /* Ajusta el ancho según sea necesario */
+  margin-bottom: 40px;
+  /* Espacio entre cada elemento */
+  margin-right: 20px;
+}
+
+.recetas-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.recetas-description {
+  text-align: center;
+  /* Centra el texto */
+}
+
+.recetas-titile {
+  margin-top: 10px;
+}
+
+.recetas-img iframe {
+  width: 100%; /* Ajusta el ancho del iframe al 100% del contenedor */
+  height: 200px; /* Permite que la altura del iframe se ajuste automáticamente */
 }
 
 /*inicio css del footer*/
@@ -195,9 +333,6 @@ footer {
   font-size: 30px;
   width: 100%;
 }
-footer p {
-  margin-bottom: 20px;
-}
 footer .redes a {
   text-decoration: none;
 }
@@ -207,7 +342,96 @@ footer .redes i {
   letter-spacing: 10px;
 }
 footer .redes i:hover {
-  color: #F57C00;
+  color: #594B02;
 }
 
-/*fin css del footer*//*# sourceMappingURL=estilos.css.map */
+/*--mediaqueries--*/
+@media screen and (max-width: 575px) {
+  .row {
+    flex-direction: column;
+  }
+  .pleft-index {
+    order: 1;
+  }
+  .pright {
+    order: 2;
+    height: 300px;
+  }
+  .nLeft2 {
+    order: 2;
+    /* Cambia el orden para que nLeft2 aparezca debajo */
+  }
+  .nRight2 {
+    order: 1;
+    /* Cambia el orden para que nRight2 aparezca arriba */
+  }
+  .recetas-menu-item {
+    width: 100%; /* Establece el ancho al 100% para que ocupe toda la pantalla */
+    margin-bottom: 20px; /* Agrega un margen inferior para separar los elementos */
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 752px) {
+  .pleft-index p {
+    font-size: 20px;
+    /* Reducir el tamaño de fuente */
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1920px) {
+  .navbar {
+    height: 120px;
+  }
+  .navbar-brand {
+    font-size: 25px;
+  }
+  .nav-link {
+    font-size: 22px;
+    margin-right: 20px;
+  }
+  .nav-link.active {
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 758px) and (max-width: 1128px) {
+  .pNosotros {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 572px) and (max-width: 758px) {
+  .pNosotros {
+    font-size: 16px;
+  }
+  .containerContacto input {
+    width: 100%;
+    width: 500px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 10px;
+  }
+  .containerContacto textarea {
+    width: 100%;
+    width: 500px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 572px) {
+  .pNosotros {
+    font-size: 16px;
+  }
+  .containerContacto input {
+    width: 100%;
+    width: 300px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 10px;
+  }
+  .containerContacto textarea {
+    width: 100%;
+    width: 300px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 10px;
+  }
+}
+/*fin scss del footer*//*# sourceMappingURL=estilos.css.map */
